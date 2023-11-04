@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+ 
+ <ion-app>
+     <ion-header [translucent]="true">
+      <ion-toolbar color="success">
+        <ion-title><center>Quiz ELP</center></ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content [fullscreen]="true">
+      <ion-card>
+      <ion-list>
+        <ion-item>
+          <ion-textarea label-placement="floating" value="Jumel" id="name">
+            <div slot="label">Enter your Name <ion-text color="danger">(Required)</ion-text></div>
+            </ion-textarea>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+      
+     <ion-card>
+       <ion-card-header>
+         <ion-card-title>Direction</ion-card-title>
+         <ion-card-subtitle>Read this</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Answer the following question with ALL CAPITAL LETTER, write your answer in box provided and submit when you done. Goodluckkkkk.
+  </ion-card-content>
+</ion-card>
+      
+      <!-- start Question -->
+      <ion-card color="black">
+        <ion-card-content> <b> 1.  Which one is correct?</b></ion-card-content>
+        <ion-card-content>
+          A) 	Every one of the shirts has a green collar.
+        </ion-card-content>
+        <ion-card-content>
+         	B) 	Every one of the shirts have a green collar.
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans1" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 2.  Which one is correct?</b></ion-card-content>
+
+        <ion-card-content>
+          A) 	This singer, along with a few others, play the harmonica on stage.
+        </ion-card-content>
+        <ion-card-content>
+         	B) 	This singer, along with a few others, plays the harmonica on stage.
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans2" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 3. What's next?</b></ion-card-content>
+
+        <ion-card-content>
+         	<p> Go ->   Went   ->   ?</p>
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans3" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+
+        <ion-card-content> <b> 4.  I have _____ the last soda.</b></ion-card-content>
+
+        <ion-card-content>
+         	A)  drunk <br><br>
+         	B)  drank <br><br>
+         	C)  drinking
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans4" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 5.  Which one is correct?</b></ion-card-content>
+
+        <ion-card-content>
+          A) 	The president or the vice president are speaking today.
+        </ion-card-content>
+        <ion-card-content>
+         	B) 	The president or the vice president is speaking today.
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans5" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 6.  She _____ us coming.</b></ion-card-content>
+
+        <ion-card-content>
+         	A)  seen <br><br>
+         	B)  saw <br><br>
+         	C)  seed
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans6" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 7.  Which one is correct?</b></ion-card-content>
+
+        <ion-card-content>
+          A) 	Sandals and towels are essential gear for a trip to the beach.
+        </ion-card-content>
+        <ion-card-content>
+         	B) 	Sandals and towels is essential gear for a trip to the beach.
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans7" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 8.  Dennis _____ to paint in his free time.</b></ion-card-content>
+
+        <ion-card-content>
+         	A)  like <br><br>
+         	B)  likes
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans8" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 9.  They _____ chocolate chip cookies.</b></ion-card-content>
+        
+        <ion-card-content>
+         	A)  prefer<br><br>
+         	B)  prefers
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans9" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card color="black">
+        <ion-card-content> <b> 10.  Which one is correct?</b></ion-card-content>
+
+        <ion-card-content>
+          A) 	Either Cassie or Marie pays the employees this afternoon.
+        </ion-card-content>
+        <ion-card-content>
+         	B) 	Either Cassie or Marie pay the employees this afternoon.
+        </ion-card-content>
+        <ion-card-content>
+          <input type="text" id="ans10" >
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-items inset>
+        <section>
+          <ion-button color="primary" id="submit" size="default" >Submit</ion-button>
+        </section>
+        
+      </ion-items>
+      
+    </ion-content>
+ </ion-app>
+</body>
+<script src="Index.js"></script>
+</html>
